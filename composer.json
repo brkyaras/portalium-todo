@@ -1,6 +1,6 @@
 {
-	"name" : "{{vendor}}/yii2-{{package}}",
-	"description" : "{{package}} Module for Portalium (Yii2)",
+	"name" : "brkyaras/portalium-todo",
+	"description" : "Module ToDo for Portalium",
 	"type" : "portalium-module",
 	"license": "MIT",
 	"homepage" : "https://portalium.dev",
@@ -16,7 +16,7 @@
 	},
 	"autoload" : {
 		"psr-4" : {
-			"{{vendor}}\\{{package}}\\" : "src/"
+			"brkyaras\\todo\\" : "src/"
 		}
 	}
 }

@@ -1,6 +1,6 @@
 <?php
 
-namespace {{vendor}}\{{package}};
+namespace brkyaras\todo;
 
 use portalium\base\Event;
 use {{vendor}}\{{package}}\components\TriggerActions;
@@ -17,21 +17,21 @@ class Module extends \portalium\base\Module
         [
             'class' => 'yii\rest\UrlRule',
             'controller' => [
-                '{{package}}/default',
+                'todo/default',
             ]
         ],
     ];
     
     public static function moduleInit()
     {
-        self::registerTranslation('{{package}}','@{{vendor}}/{{package}}/messages',[
-            '{{package}}' => '{{package}}.php',
+        self::registerTranslation('{{package}}','@brkyaras/todo/messages',[
+            '{{package}}' => 'todo.php',
         ]);
     }
 
     public static function t($message, array $params = [])
     {
-        return parent::coreT('{{package}}', $message, $params);
+        return parent::coreT('todo', $message, $params);
     }
 
     /* 
